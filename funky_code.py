@@ -1,4 +1,4 @@
-char = ''
+char = '@'
 print(f"  {char*4}")
 print(f"{char*2}")
 print(f"{char*2}")
