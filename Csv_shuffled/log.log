@@ -1,4 +1,4 @@
-2023-11-23 12:46:20,701 line:41 DEBUG File sales_data.csv created at: 2023-11-21 00:05:36.919622+05:00
-2023-11-23 12:46:20,732 line:93 DEBUG File sales_data.csv is backed up to: C:\VS_Code\Camp_programs\Lessons\Sales_backup\sales_data1.csv
-2023-11-23 12:46:20,732 line:108 INFO Handling the data file: C:\VS_Code\Camp_programs\Lessons\Csv\sales_data.csv
-2023-11-23 12:46:20,774 line:142 INFO Shuffle rows of the sales data. Backup source file.
+2023-11-24 20:56:55,717 line:41 DEBUG File sales_data.csv created at: 2023-11-21 00:05:36.919622+05:00
+2023-11-24 20:56:55,736 line:93 DEBUG File sales_data.csv is backed up to: C:\VS_Code\Camp_programs\Lessons\Sales_backup\sales_data1.csv
+2023-11-24 20:56:55,736 line:108 INFO Handling the data file: C:\VS_Code\Camp_programs\Lessons\Csv\sales_data.csv
+2023-11-24 20:56:55,777 line:142 INFO Shuffle rows of the sales data. Backup source file.

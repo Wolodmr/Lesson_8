@@ -131,7 +131,7 @@ def sales_data_randomization(p, p_s, func):
     os.chdir(path_initial)
     return file_name
             
-def main(t, ext, p, p_s, p_o, func): 
+def main(func): 
 
     #Executing the functions:
     #sales_data_randomization(path, path_shuffled, backup(path, path_out, path_shuffled, extensions, getting_file(path, path_shuffled)))
@@ -141,23 +141,37 @@ def main(t, ext, p, p_s, p_o, func):
     logging.basicConfig(filename=path_shuffled+'\\log.log', level=logging.DEBUG, filemode = 'w', format="%(asctime)s line:%(lineno)d %(levelname)s %(message)s")
     logging.info("Shuffle rows of the sales data. Backup source file.")
     
+#################################################################################################################################################################
 
+# Executing of the program:
+#
+import time
+from datetime import datetime
+#
 # Initial data:
-time_handle = '12:03:00'
+#
+# 'hour', 'minute', and'second' - parameters of user defined moment of daily handling the data file:
+hour, minute, second = 20,57,00
+time_delta = 6
+#
+# meaning of 'sleep_seconds' parameter is to be less than one of 'time_delta' and positive:
+sleep_seconds = 5
 extensions = ['.csv', '.xls', '.xlsx']
 path = 'C:\VS_Code\Camp_programs\Lessons\Csv'
 path_shuffled = 'C:\VS_Code\Camp_programs\Lessons\Csv_shuffled'
 path_out = 'C:\VS_Code\Camp_programs\Lessons\Sales_backup'
 
-import time
-from datetime import datetime
-t = datetime.now()
-t = t.strftime('%H:%M:%S')
+t_sec = int(0)
+time_handle_sec = hour*3600 + minute*60 + second
 
-while t < time_handle:
-    time.sleep(5)
+while abs(t_sec - time_handle_sec) > time_delta:
+    time.sleep(sleep_seconds)
     t = datetime.now()
     t = t.strftime('%H:%M:%S')
+    ht, mt, st =  t.split(':')
+    # 't_sec' - current time of the date in seconds:
+    t_sec = int(ht)*3600 + int(mt)*60 + int(st)
+    
 
-    #Executing the functions:
-main(time_handle, extensions, path, path_shuffled, path_out, sales_data_randomization(path, path_shuffled, backup(path, path_out, path_shuffled, extensions, getting_file(path, path_shuffled))))
+#Executing the functions:
+main(sales_data_randomization(path, path_shuffled, backup(path, path_out, path_shuffled, extensions, getting_file(path, path_shuffled))))
