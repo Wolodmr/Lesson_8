@@ -2,7 +2,7 @@ size = 4
 ans_opt = 4
 themes_source = 'math,physics,history,geography'
 quest = [
-['What is prime number?,0,Fully divisible natural number,Fully divisible natural number',
+['What is prime number?,0,Natural number divisible only by itself and 1,Natural number divisible only by itself and 1',
 'What is linear equation?,The one with variables in power to 1,The one with the only variable,The one with variables in power to 1',
 'What is 5/0 equal to?,0,No result,No result',
 'What is a divisibility rule for 2?,Number is to end with 2,Number is to end with 0 or 2 or 4 or 6 or 8,Number is to end with 0 or 2 or 4 or 6 or 8'],
