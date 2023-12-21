@@ -1,0 +1,16 @@
+{'math': {'What is prime number?': {0: '0', 1: 'Fully divisible natural number', 2: 'Fully divisible natural number'}}}
+{'math': {'What is linear equation?': {0: 'The one with variables in power to 1', 1: 'The one with the only variable', 2: 'The one with variables in power to 1'}}}
+{'math': {'What is 5/0 equal to?': {0: '0', 1: 'No result', 2: 'No result'}}}
+{'math': {'What is a divisibility rule for 2?': {0: 'Number is to end with 2', 1: 'Number is to end with 0 or 2 or 4 or 6 or 8', 2: 'Number is to end with 0 or 2 or 4 or 6 or 8'}}}
+{'physics': {'In what case an Archimedes force is greater for the same submarine: when it is lying on the dirt bottom or on the sand bottom of the sea in the same depth?': {0: 'Doesn"t matter', 1: 'In the sand', 2: 'In the sand'}}}
+{'physics': {'If a Gravitational force is greater for the same body': {0: ' when it is lying or when it is in a free flight in the same point of the space?', 1: 'Doesn"t matter', 2: 'In a free flight'}}}
+{'physics': {'What is the speed of a book lying on the table in the school?': {0: 'Depends on the choice of frame of reference', 1: '0', 2: 'Depends on the choice of frame of reference'}}}
+{'physics': {'What is an acceleration module of the car with engine trust of 1000 Newtons if the car mass is 1000 kg?': {0: '1mps**2', 1: '10mps**2', 2: '1mps**2'}}}
+{'history': {'What country king was Leonidas in an Ancient Greece?': {0: 'Sparta', 1: 'Thebes', 2: 'Sparta'}}}
+{'history': {'Who was the first Emperor of Rome?': {0: 'Gaius Julius Caesar', 1: 'Marcus Junius Brutus', 2: 'Gaius Julius Caesar'}}}
+{'history': {'Whose army have defeated army of Spartakus?': {0: 'Marcus Licinius Crassus', 1: 'Gnaeus Pompeius Magnus', 2: 'Marcus Licinius Crassus'}}}
+{'history': {'Who was a leader of the peasant war in Germany?': {0: 'Thomas Muntzer', 1: 'Martin Luther', 2: 'Thomas Muntzer'}}}
+{'geography': {'What is the southern cape of the Southern America?': {0: 'Cape Horn', 1: 'Cape of Good Hope', 2: 'Cape Horn'}}}
+{'geography': {'What is the most western country of the European continent?': {0: 'United Kingdom', 1: 'Portugal', 2: 'Portugal'}}}
+{'geography': {'What is a capital of New Zealand?': {0: 'Wellington', 1: 'Auckland', 2: 'Wellington'}}}
+{'geography': {'In what country is Brisbane town?': {0: 'New Zealand', 1: 'Australia', 2: 'Australia'}}}
