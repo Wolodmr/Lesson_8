@@ -297,7 +297,9 @@ if cont == 'n':
     now = datetime.now()
     timestamp_stop = datetime.timestamp(now)
     print() 
-    print(f'Time spent for the game is {(timestamp_stop - timestamp_start)//60} min, {(timestamp_stop - timestamp_start)//10*10} s')     
+    timespent_min = (timestamp_stop - timestamp_start)//60
+    timespent_sec = round((timestamp_stop - timestamp_start - timespent_min * 60), 1)
+    print(f'Time spent for the game is {timespent_min} min, {timespent_sec} s')   
 
         
 

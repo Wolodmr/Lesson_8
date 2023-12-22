@@ -57,7 +57,6 @@ for i in range(size):
             ans[i][j][k-1] = quest[i][j][k]
        
         quiz.append(questi[i][j])
-print(quiz)
             
 with open("data_questions.json", "w") as write_file:
     json.dump(quiz, write_file)
