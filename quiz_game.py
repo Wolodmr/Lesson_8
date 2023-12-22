@@ -82,7 +82,7 @@ def quiz_preparation():
 # QUIZ STARTS! Answering questions begins:
 def quiz_game(size, ans_opt, funct):
      
-    if cont == 'y': 
+    if cont != 'a' and cont != 'n': 
         
         quest, themes = funct 
            
@@ -172,10 +172,10 @@ def quiz_game(size, ans_opt, funct):
     return archive_correct, archive_incorrect
 
 # Keeping track of score and archiving correct and incorrect answers:
-def main(function, funct):
+def main(funct, function):
     
-    archive_correct = funct[0]
-    archive_incorrect = funct[1]
+    archive_correct, archive_incorrect = funct
+    print('archive_correct = ', archive_correct)
     
     if cont == 'n':
 # Calculating the score:           
@@ -246,7 +246,7 @@ def main(function, funct):
                 correct_option = value_in['2']         
                 print('Correct option is:', correct_option)
                 print() 
-        finish = True
+        
 
 # START START START START START START START START START START START START START START START START START START
         
@@ -269,25 +269,41 @@ finish = None
 cont = 0 
 
 # Loop for multiple running the program, according to player's wishes: 
-cont = input('To play press "y", to add a question press "a" ')
-if cont != 'a':
-    while cont != 'n' or not finish:
+
+cont = input('To play press "Enter", to add a question press "a" ')
+while cont != finish:
+    if cont == 'a':
         
-        main(quiz_preparation(), quiz_game(size, ans_opt, quiz_preparation() ))  
-        if cont == 'n': 
+        quiz_preparation()
+        finish = True
+        break
 
-            # Time spent for the game:
-            now = datetime.now()
-            timestamp_stop = datetime.timestamp(now)
-            print() 
-            print(f'Time spent for the game is {(timestamp_stop - timestamp_start)//60} min, {(timestamp_stop - timestamp_start)//10*10} s')        
-            break
+    elif cont == 'n':
+        main(quiz_game(size, ans_opt, quiz_preparation() ), quiz_preparation())
+        finish = True
+        break
 
-        cont = input('If you want to continue, press "Enter", if no, press "n" ')    
-       
-else:
-    quiz_preparation()
+        
+
+    else:
+            quiz_game(size, ans_opt, quiz_preparation() ) 
+
+            cont = input('If you want to continue, press "Enter", if no, press "n" ')   
     
+        
+        
+if cont == 'n':
+     # Time spent for the game:
+    now = datetime.now()
+    timestamp_stop = datetime.timestamp(now)
+    print() 
+    print(f'Time spent for the game is {(timestamp_stop - timestamp_start)//60} min, {(timestamp_stop - timestamp_start)//10*10} s')     
+
+        
+
+
+         
+ 
     
            
     
